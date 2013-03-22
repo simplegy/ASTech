@@ -33,9 +33,9 @@ void HolidayFileSource::retrieveRecord(){
 
 	while (file.good()){
 		file>>value;
-		vector<string> vec = fileUtil::split(value,':');
+		vector<string> vec = FileUtil::split(value,':');
 		market = EnumHelper::getCcyEnum(vec[0]);
-		vector<string> holidays = fileUtil::split(vec[1],',');
+		vector<string> holidays = FileUtil::split(vec[1],',');
 		//cout<<market<<" market has total holiday number:  "<<holidays.size()<<endl;
 		set<long> JDNSet = buildJDNSet(holidays);
 		tempMap.insert(pair<enums::CurrencyEnum,set<long>>(market,JDNSet));

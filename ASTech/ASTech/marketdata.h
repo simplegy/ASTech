@@ -7,6 +7,7 @@
 #include <map>
 #include <tuple>
 #include "Enums.h"
+#include "TimeSeries.h"
 
 using namespace utilities;
 using namespace instruments;
@@ -31,6 +32,8 @@ namespace Markets {
 	private:
 		static bool instanceFlag;
 		static MarketData *single;
+
+      map<CcyPair, TimeSeries> _timeSeriesMap;
 	};
 }
 #endif

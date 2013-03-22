@@ -45,7 +45,6 @@ namespace utilities {
 		std::string _ccy2;
 		std::string _ccyPairStr;
 		bool _isEmergingMarket;
-		int _domesticCcyIndex;
 	};
 }
 #endif

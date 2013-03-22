@@ -19,13 +19,13 @@
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>true</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
     <ConfigurationType>Application</ConfigurationType>
     <UseDebugLibraries>false</UseDebugLibraries>
-    <PlatformToolset>v110</PlatformToolset>
+    <PlatformToolset>v100</PlatformToolset>
     <WholeProgramOptimization>true</WholeProgramOptimization>
     <CharacterSet>Unicode</CharacterSet>
   </PropertyGroup>
@@ -84,6 +84,7 @@
     <ClInclude Include="AbstractFileSource.h" />
     <ClInclude Include="AbstractSession.h" />
     <ClInclude Include="AbstractTest.h" />
+    <ClInclude Include="CandleStick.h" />
     <ClInclude Include="CcyPair.h" />
     <ClInclude Include="CcyPairFileSource.h" />
     <ClInclude Include="Configuration.h" />
@@ -94,6 +95,7 @@
     <ClInclude Include="EnumHelper.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="fileUtil.h" />
+    <ClInclude Include="FXPriceFileSource.h" />
     <ClInclude Include="HolidayFileSource.h" />
     <ClInclude Include="Market.h" />
     <ClInclude Include="marketdata.h" />
@@ -103,6 +105,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="TestManager.h" />
+    <ClInclude Include="TimeSeries.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="AbstractFileSource.cpp" />

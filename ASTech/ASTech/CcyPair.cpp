@@ -15,14 +15,6 @@ void CcyPair::setCcyPairStr(std::string ccyPairStr){
 	}else{
 		throw "currency pair not recognized!";
 	}
-
-	string domesticCcy = Configuration::getInstance()->getProperty("currency.domestic",false,"USD");
-	if (domesticCcy == _ccy1)
-		_domesticCcyIndex = 1;
-	else if (domesticCcy == _ccy2)
-		_domesticCcyIndex = 2;
-	else
-		_domesticCcyIndex = 0;
 }
 
 bool CcyPair::isEqual(CcyPair ccyPair){

@@ -12,6 +12,7 @@
 #include "Enums.h"
 #include "Market.h"
 #include "CcyPair.h"
+#include "TimeSeries.h"
 
 using namespace utilities;
 using namespace DAO;
@@ -32,6 +33,7 @@ namespace Session {
 		typedef std::map<enums::CurrencyEnum, std::set<long>> HolidayMap;	
 		typedef std::map<enums::CurrencyEnum, Market> MarketMap;
 		typedef std::map<string, CcyPair> CcyPairMap;
+      typedef std::map<CcyPair, TimeSeries> RawTimeSeriesMap;
 
 		// Getters
 		HolidayMap getHolidayMap(){return _holidayMap;}
@@ -56,6 +58,7 @@ namespace Session {
 		HolidayMap _holidayMap;			
 		MarketMap _MarketMap;
 		CcyPairMap _CcyPairMap;
+      RawTimeSeriesMap _RawTimeSeriesMap;
 	};
 }
 

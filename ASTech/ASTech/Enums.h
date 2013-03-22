@@ -6,7 +6,7 @@
 namespace enums {
 
 	enum CurrencyEnum{EUR,USD,THB,KRW,SGD,JPY};
-
+   enum ResolutionEnum{ YEARLY, MONTHLY, WEEKLY, DAILY, HOURLY, PERMINUTE, PERSECOND, PERMICRO, PERMILLI};
 }
 
 #endif
