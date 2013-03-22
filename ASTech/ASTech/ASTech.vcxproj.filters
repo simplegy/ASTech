@@ -1,0 +1,167 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\astech.persistence">
+      <UniqueIdentifier>{b9fe5710-2ccb-4867-86f6-ac646d360a55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\astech.object">
+      <UniqueIdentifier>{246b160f-acc1-4a9b-97d5-c2f5f1c52665}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\astech.session">
+      <UniqueIdentifier>{3932def3-f6b7-4789-a842-b4a74ae1c636}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\astech.util">
+      <UniqueIdentifier>{057de0e7-ee47-4859-99d0-d8d99d6bae8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\astech.test">
+      <UniqueIdentifier>{d5187e19-9a03-4046-9d44-0bc5d3b34b35}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+    <Text Include="holiday.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractDAO.h">
+      <Filter>Header Files\astech.persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractFileSource.h">
+      <Filter>Header Files\astech.persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractSession.h">
+      <Filter>Header Files\astech.session</Filter>
+    </ClInclude>
+    <ClInclude Include="AbstractTest.h">
+      <Filter>Header Files\astech.test</Filter>
+    </ClInclude>
+    <ClInclude Include="CcyPair.h">
+      <Filter>Header Files\astech.object</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigurationFileSource.h">
+      <Filter>Header Files\astech.persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="CcyPairFileSource.h">
+      <Filter>Header Files\astech.persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="Constants.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="dateUtil.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="date.h">
+      <Filter>Header Files\astech.object</Filter>
+    </ClInclude>
+    <ClInclude Include="Configuration.h">
+      <Filter>Header Files\astech.object</Filter>
+    </ClInclude>
+    <ClInclude Include="EnumHelper.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="Enums.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="HolidayFileSource.h">
+      <Filter>Header Files\astech.persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="fileUtil.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="Market.h">
+      <Filter>Header Files\astech.object</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="MarketFileSource.h">
+      <Filter>Header Files\astech.persistence</Filter>
+    </ClInclude>
+    <ClInclude Include="RecordHelper.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="marketdata.h">
+      <Filter>Header Files\astech.util</Filter>
+    </ClInclude>
+    <ClInclude Include="TestManager.h">
+      <Filter>Header Files\astech.test</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ASTech.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractFileSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AbstractTest.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CcyPair.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="CcyPairFileSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Configuration.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigurationFileSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="date.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="dateUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnumHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="fileUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="HolidayFileSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Market.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MarketFileSource.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtil.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="RecordHelper.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="marketdata.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="TestManager.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ccypair.csv" />
+    <None Include="instance.properties" />
+    <None Include="MarketConvention.csv" />
+  </ItemGroup>
+</Project>
