@@ -4,8 +4,10 @@
 #define CANDLESTICK_H
 #include <map>
 #include "Enums.h"
-#include "date.h"
 #include "CcyPair.h"
+#include "boost\date_time\gregorian\gregorian.hpp"
+
+using namespace boost::gregorian;
 
 namespace utilities {
 
@@ -19,7 +21,8 @@ namespace utilities {
 
 
       // Getters and Setters;
-      
+		CcyPair* getCcyPair(){ return &_ccyPair; }
+		date getDate(){ return _date; }
 
 	private:
 

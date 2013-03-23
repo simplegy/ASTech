@@ -5,6 +5,7 @@
 #include "Configuration.h"
 #include "HolidayFileSource.h"
 #include "ConfigurationFileSource.h"
+#include "BBGFXPriceFileSource.h"
 #include "MarketFileSource.h"
 #include <vector>
 
@@ -25,6 +26,7 @@ void RecordHelper::init(Configuration* cfg){
 	dataSourceVector.push_back(new ConfigurationFileSource());
 	dataSourceVector.push_back(new MarketFileSource());
 	dataSourceVector.push_back(new HolidayFileSource());
+   dataSourceVector.push_back(new BBGFXPriceFileSource());
 
 	for(unsigned int i = 0; i<dataSourceVector.size(); i++){
 		AbstractDAO* dao = dataSourceVector[i];

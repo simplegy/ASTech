@@ -3,10 +3,12 @@
 #define ABSTRACTTEST_H
 
 #include <string>
-#include "date.h"
 #include <tuple>
 #include "AbstractFileSource.h"
 
+#include "boost\date_time\gregorian\gregorian.hpp"
+
+using namespace boost::gregorian;
 using namespace std;
 using namespace utilities;
 using namespace DAO;
@@ -15,8 +17,6 @@ namespace UnitTest{
 	class AbstractTest: public AbstractFileSource{
 
 	public:
-
-		typedef tuple<date, double> point;
 
 		// Constructors
 		AbstractTest(){};
@@ -41,8 +41,6 @@ namespace UnitTest{
 		bool compareResult(double derivedVal, double expectedVal);
 
 		bool compareResult(std::string derivedVal, std::string expectedVal);
-
-		std::string getString(point point0);
 
 		double _EPSILON;
 		bool _isEnabled;

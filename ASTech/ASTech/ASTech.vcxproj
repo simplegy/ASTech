@@ -47,15 +47,18 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\boost\boost_1_53_0</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>C:\boost\boost_1_53_0\stage\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -90,20 +93,16 @@
     <ClInclude Include="Configuration.h" />
     <ClInclude Include="ConfigurationFileSource.h" />
     <ClInclude Include="Constants.h" />
-    <ClInclude Include="date.h" />
-    <ClInclude Include="dateUtil.h" />
     <ClInclude Include="EnumHelper.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="fileUtil.h" />
-    <ClInclude Include="FXPriceFileSource.h" />
+    <ClInclude Include="BBGFXPriceFileSource.h" />
     <ClInclude Include="HolidayFileSource.h" />
     <ClInclude Include="Market.h" />
     <ClInclude Include="marketdata.h" />
     <ClInclude Include="MarketFileSource.h" />
     <ClInclude Include="MathUtil.h" />
     <ClInclude Include="RecordHelper.h" />
-    <ClInclude Include="stdafx.h" />
-    <ClInclude Include="targetver.h" />
     <ClInclude Include="TestManager.h" />
     <ClInclude Include="TimeSeries.h" />
   </ItemGroup>
@@ -111,12 +110,11 @@
     <ClCompile Include="AbstractFileSource.cpp" />
     <ClCompile Include="AbstractTest.cpp" />
     <ClCompile Include="ASTech.cpp" />
+    <ClCompile Include="BBGFXPriceFileSource.cpp" />
     <ClCompile Include="CcyPair.cpp" />
     <ClCompile Include="CcyPairFileSource.cpp" />
     <ClCompile Include="Configuration.cpp" />
     <ClCompile Include="ConfigurationFileSource.cpp" />
-    <ClCompile Include="date.cpp" />
-    <ClCompile Include="dateUtil.cpp" />
     <ClCompile Include="EnumHelper.cpp" />
     <ClCompile Include="fileUtil.cpp" />
     <ClCompile Include="HolidayFileSource.cpp" />
@@ -125,16 +123,18 @@
     <ClCompile Include="MarketFileSource.cpp" />
     <ClCompile Include="MathUtil.cpp" />
     <ClCompile Include="RecordHelper.cpp" />
-    <ClCompile Include="stdafx.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="TestManager.cpp" />
+    <ClCompile Include="TimeSeries.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bbg.csv" />
     <None Include="ccypair.csv" />
+    <None Include="forexite.csv">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="instance.properties" />
     <None Include="MarketConvention.csv" />
+    <None Include="truefx.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
