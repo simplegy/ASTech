@@ -32,7 +32,7 @@ namespace DAO {
 
 		CandleStick* createCandleStickObject(CSVDatabase db, int row);
 
-		void updateCandleStickObject(std::string fieldName, std::string fieldVal, CandleStick* candleStick);
+		void updateCandleStickObject(int columnIndex, std::string fieldVal, CandleStick* candleStick);
 
 	};
 }
