@@ -1,7 +1,6 @@
 // ASTech.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
 #include "RecordHelper.h"
 #include "Market.h"
 #include "Enums.h"
@@ -16,7 +15,7 @@ using namespace Markets;
 
 void LoadInitialData();
 
-int _tmain(int argc, _TCHAR* argv[])
+int main()
 {
 	LoadInitialData();
 }

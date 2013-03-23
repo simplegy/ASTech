@@ -2,7 +2,6 @@
 #ifndef MarketData_H
 #define MarketData_H
 #include "Market.h"
-#include "date.h"
 #include "Configuration.h"
 #include <map>
 #include <tuple>

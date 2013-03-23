@@ -3,12 +3,12 @@
 #ifndef TIMESERIES_H
 #define TIMESERIES_H
 #include <map>
-#include "dateUtil.h"
 #include "Enums.h"
-#include "date.h"
 #include "CcyPair.h"
 #include "CandleStick.h"
+#include "boost\date_time\gregorian\gregorian.hpp"
 
+using namespace boost::gregorian;
 
 namespace utilities {
 
@@ -33,7 +33,7 @@ namespace utilities {
 	private:
 
 		CcyPair _ccyPair;
-		std::map<long, CandleStick> _candleStickMap;
+      std::map<date, CandleStick> _candleStickMap;
 	};
 }
 #endif
