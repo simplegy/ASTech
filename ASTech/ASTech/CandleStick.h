@@ -19,7 +19,8 @@ namespace utilities {
 
 
       // Getters and Setters;
-      
+		CcyPair* getCcyPair(){ return &_ccyPair; }
+		date getDate(){ return _date; }
 
 	private:
 

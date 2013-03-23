@@ -95,7 +95,7 @@
     <ClInclude Include="EnumHelper.h" />
     <ClInclude Include="Enums.h" />
     <ClInclude Include="fileUtil.h" />
-    <ClInclude Include="FXPriceFileSource.h" />
+    <ClInclude Include="BBGFXPriceFileSource.h" />
     <ClInclude Include="HolidayFileSource.h" />
     <ClInclude Include="Market.h" />
     <ClInclude Include="marketdata.h" />
@@ -111,6 +111,7 @@
     <ClCompile Include="AbstractFileSource.cpp" />
     <ClCompile Include="AbstractTest.cpp" />
     <ClCompile Include="ASTech.cpp" />
+    <ClCompile Include="BBGFXPriceFileSource.cpp" />
     <ClCompile Include="CcyPair.cpp" />
     <ClCompile Include="CcyPairFileSource.cpp" />
     <ClCompile Include="Configuration.cpp" />
@@ -130,11 +131,15 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="TestManager.cpp" />
+    <ClCompile Include="TimeSeries.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="bbg.csv" />
     <None Include="ccypair.csv" />
+    <None Include="forexite.csv" />
     <None Include="instance.properties" />
     <None Include="MarketConvention.csv" />
+    <None Include="truefx.csv" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

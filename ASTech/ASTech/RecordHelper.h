@@ -33,12 +33,15 @@ namespace Session {
 		typedef std::map<enums::CurrencyEnum, std::set<long>> HolidayMap;	
 		typedef std::map<enums::CurrencyEnum, Market> MarketMap;
 		typedef std::map<string, CcyPair> CcyPairMap;
-      typedef std::map<CcyPair, TimeSeries> RawTimeSeriesMap;
+		typedef std::map<string, TimeSeries> TimeSeriesMap;
 
 		// Getters
 		HolidayMap getHolidayMap(){return _holidayMap;}
 		MarketMap getMarketMap(){return _MarketMap;}
 		CcyPairMap* getCcyPairMap(){ return &_CcyPairMap; }
+		TimeSeriesMap* getBBGRawTimeSeriesMap(){ return &_BBGRawTimeSeriesMap; }
+		TimeSeriesMap* getForexiteRawTimeSeriesMap(){ return &_ForexiteRawTimeSeriesMap; }
+		TimeSeriesMap* getTruefxRawTimeSeriesMap(){ return &_TruefxRawTimeSeriesMap; }
 
 		// Setters
 		void setHolidayMap(HolidayMap map){_holidayMap=map;}
@@ -58,7 +61,9 @@ namespace Session {
 		HolidayMap _holidayMap;			
 		MarketMap _MarketMap;
 		CcyPairMap _CcyPairMap;
-      RawTimeSeriesMap _RawTimeSeriesMap;
+		TimeSeriesMap _BBGRawTimeSeriesMap;
+		TimeSeriesMap _ForexiteRawTimeSeriesMap;
+		TimeSeriesMap _TruefxRawTimeSeriesMap;
 	};
 }
 
